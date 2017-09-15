@@ -1,0 +1,156 @@
+.about-top{
+    width: 100%;
+    position: relative;
+    img{
+        width: 100%;
+    }
+    .myback{
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+    }
+    .mywelcome{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 30%;
+        p{
+            color: #fff;
+            font-size: 1.4rem;
+            line-height: 1.15;
+            text-align: center;
+            a{
+                display: inline-block;
+                width: 10rem;
+                height: 2.4rem;
+                line-height: 2.4rem;
+                border-radius: 1.2rem;
+                color: #fff;
+                background: #fe6600;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}    
+
+
+.about-main-top{
+    .aboout-mt-list{
+        
+        display: flex;
+        flex-direction:row;
+        flex-wrap: nowrap;
+        li:nth-child(4){
+            position: relative;
+            border-left: 0.1rem solid #eee;
+        }
+        li:nth-child(4):before{
+            content: "";
+            position: absolute;        
+            left: -0.56rem;
+            top: 42%;
+            width: 1rem;
+            height: 1rem;
+            border-top:0.1rem solid #eee;
+            background-color: #fff;
+            border-right: 0.1rem solid #eee;
+            transform: rotate(45deg);
+        }
+        li{
+            display: flex;
+            flex: 1;
+            height: 7.5rem;
+//          border: 1px solid #ccc;
+            align-items: center;
+            justify-content: center;
+            a{
+                color: #666;
+                img{
+                   display: flex;   
+                   width: 3.2rem;
+                    margin: auto;
+                }
+            }
+        }
+            
+    }
+    
+}
+
+.link-box{
+    width: 100%;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        li:nth-child(1),li:nth-child(2),li:nth-child(3),li:nth-child(4){
+            border-bottom: 0.1rem solid #eee;
+        }
+        li:nth-child(1),li:nth-child(2),li:nth-child(3),li:nth-child(5),li:nth-child(6),li:nth-child(7){
+            border-right: 0.1rem solid #eee;
+        }
+        li{
+            height: 7.5rem;
+            display: flex;
+            width: 25%;
+            box-sizing: border-box;
+            align-items: center;
+            justify-content:center;
+            a{
+                color: #666;
+                img{
+                    display: flex;
+                    width: 3.2rem;
+                    margin:  auto;
+                }
+                p{
+                    text-align: center;
+                }
+            }
+        }
+        
+    }
+}
+
+.acmount-manger{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding:0 1rem;
+    height: 4rem;
+     align-content: space-between;
+    flex-direction: row;
+    .acmount-manger-l{
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1.4rem;
+        color: #494949;
+    }
+    .acmount-manger-r{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        flex: 1;
+        span{
+            display: inline-block;
+           width: 1.2rem;
+           height: 1.2rem;
+            background: url(../img/chevronRight@2x.png) no-repeat center center;
+        }
+    }
+}
+
+.banner-maidian{
+    a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+        }
+    }
+}

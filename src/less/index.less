@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    font-size: 1.2rem;
+}
+
+ul,li{
+    list-style: none;
+}
+
+
+.main{
+    width: 100%;
+    height: 100%;
+    max-width: 100rem;
+}
+a{
+    text-decoration: none;
+}
+.fl{
+    float: left;
+    &:after{
+        content: "";
+        display: block;
+        clear: both;     
+    }
+}
+.fr{
+    float: right;
+    &:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+.footer{
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    bottom: 0rem;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    li{
+         float: left;
+        width: 25%;
+        height: 100%;
+        text-align: center;
+        padding: 1rem 0;
+         overflow: hidden;
+        
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: #494949;
+                i{
+                    font-size: 2.5rem; 
+                }
+            
+        }
+    }
+}
+
+.footer li .act{
+   color: #fe6600;
+}
+/* 清除浮动 */ 
+.clearfix:before,.clearfix:after { 
+content:""; 
+display:table; 
+} 
+.clearfix:after { 
+clear:both; 
+overflow:hidden; 
+} 
+.clearfix { 
+zoom:1; /* for IE6 IE7 */ 
+} 
+.clear{ 
+clear:both; 
+display:block; 
+overflow:hidden; 
+}
+
+@import "font.less";
+@import "home.less";
+@import "class.less";
+@import "shopcar.less";
+@import "my.less";
+@import "detail.less";
+@import "phone.less";

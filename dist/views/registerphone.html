@@ -1,0 +1,47 @@
+<div class="rphone">
+	<nav class="menu">
+		<div class="phonere" ui-sref="passport.rphone" ui-sref-active="ract">
+			手机注册
+		</div>
+		<div class="emailre" ui-sref="passport.remail" ui-sref-active="ract">
+			邮箱注册
+		</div>
+	</nav>
+	<form action="login()" name="myForm" ng-controller="validateCtrl" novalidate>
+		<ul class="rphone-list">
+			<li>
+				<input type="text" name="mobile" ng-model="mobile"  ng-pattern="mobileRegx" placeholder="请输入手机号码" required/>
+				 <span ng-show="myForm.mobile.$error.required">手机号是必须的。</span>
+				<span ng-show="myForm.mobile.$error.pattern">手机格式不合法</span>
+				
+
+			</li>
+			<li>
+				<input type="" name="" id="" value="" placeholder="请输入验证码" />
+				<span>请填写图形验证码</span>
+				<div>
+					
+					<img src="img/GetImgVerificationCode.jpg" alt="" />
+				</div>
+			</li>
+
+			<li>
+				<input type="text" placeholder="请输入短信验证码" />
+				<div>
+					获取短信验证码
+				</div>
+
+			</li>
+			<li>
+				<!--<submit >下一步</submit>-->
+				<input type="submit"  value="提交" ng-disabled="myForm.mobile.$invalid" />
+
+			</li>
+		</ul>
+
+		<p class="findmi">
+			<a href="">找回密码</a>
+		</p>
+	</form>
+
+</div>

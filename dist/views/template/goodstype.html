@@ -1,0 +1,88 @@
+<div>
+	<div class="class main-content">
+		<div class="goods-content clearfix">
+		<ul class="goods-name-list">
+			<li ng-click="type('hot')"  ng-class="{'typeact': myclass=='hot'}" >热门推荐</li>
+			<li ng-click="type('flower')" ng-class="{'typeact': myclass=='flower'}">鲜花</li>
+			<li ng-click="type('ysh')" ng-class="{'typeact': myclass=='ysh'}">永生花</li>
+			<li ng-click="type('cake')" ng-class="{'typeact': myclass=='cake'}">蛋糕</li>
+		</ul>
+		
+		<div class="goods-main">
+		
+			<!--<h1>{{content}}</h1>-->
+			<!--<p>
+				{{content.type}}
+			</p>
+			<p>
+				{{content.content}}
+			</p>-->
+		<div class="top-banner">
+			<a href="" class="top-link">
+				<img src="{{content.topbg}}"/>
+				<p class="top-title">
+					{{content.toptitle}}
+				</p>
+				
+				
+			</a>
+			<div class="product-top clearfix">
+				<p><a href="">大家都在找</a></p>
+				<p><a href="">鲜花排行榜</a></p>
+			</div>
+		</div>
+		
+		<div class="product-main">
+			<ul class="pro-list clearfix">
+				
+				<li ui-sref="detail({'id':1})">
+					<a href="">
+						<img src="img/rose.png" alt="" />
+						<p>鲜花</p>
+					</a>
+				</li>
+				
+				<li>
+					<a href="">
+						<img src="img/kaiye.png"/>
+						<p>开业花篮</p>
+						
+					</a>
+				</li>
+						<li>
+					<a href="">
+						<img src="img/rose.png" alt="" />
+						<p>鲜花</p>
+					</a>
+				</li>
+				
+				<li>
+					<a href="">
+						<img src="img/kaiye.png"/>
+						<p>开业花篮</p>
+						
+					</a>
+				</li>
+						<li>
+					<a href="">
+						<img src="img/rose.png" alt="" />
+						<p>鲜花</p>
+					</a>
+				</li>
+				
+				<li>
+					<a href="">
+						<img src="img/kaiye.png"/>
+						<p>开业花篮</p>
+						
+					</a>
+				</li>
+
+			</ul>
+		</div>
+		
+		</div>
+	</div>
+	</div>
+	
+</div>

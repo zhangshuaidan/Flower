@@ -1,0 +1,132 @@
+.search{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: calc(100%-6.2rem);
+    height: 2.2rem;
+    padding: 1rem 1.6rem;
+    background-color: rgba(245,245,245,.9);
+    .sear-top{
+        position: relative;
+    input{
+           font-size: 1.2rem;
+           outline: 0;
+           width: calc(100%-3rem);        
+           height: 100%;
+           
+           box-sizing: border-box;
+           padding: 0.5rem 0.4rem;
+           border-radius: 0.2rem;
+           border: none;
+           
+        }
+        span{
+            position: absolute;
+            right: 2rem;
+            display: inline-block;
+            width: 2.4rem;
+            height: 2.4rem;
+            background: url(../img/icon_Search.png) no-repeat center center;
+            
+        }
+    }
+}
+
+
+//主体部分视图
+.class{
+    overflow: hidden;
+    padding-top: 4.2rem;
+}
+.goods-content{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    .goods-name-list{
+//    float: left;
+      position: fixed;
+      top: 4.2rem;
+      left: 0;
+      
+      width: 25%;
+      height: 100%;
+      background-color: rgba(245,245,245,.9);
+   
+      li{
+          line-height: 4.8rem;
+          text-align: center;
+      }
+       .typeact{
+          color: #f60;
+          background-color: #fff;
+      }
+    }
+        .goods-main{
+            float: right;
+            width: 75%;
+            box-sizing: border-box;
+            padding: 1rem;
+        }
+}
+
+//商品列表部分
+.top-banner{
+    position: relative;
+    a{
+        display: block;
+        img{
+            display: block;
+            width: 100%;
+        }
+        .top-title{
+            position: absolute;
+            left: 0;
+            top: 35%;
+            width: 100%;
+            color: #fff;
+            text-align: center;
+        }
+   
+    }
+
+    
+}
+
+.product-top{
+    margin: 2rem 0;
+    
+    p:nth-child(1){
+        float: left;
+    }    
+     p:nth-child(2){
+        float: right;
+    }
+    p{
+        a{
+            font-size: 1.2rem;
+            color: #333;
+        }
+    }
+    
+}
+
+//商品列表主体部分
+.pro-list{
+    width: 100%;
+    li{
+        float: left;
+        width: 33.3%;
+        img{
+            display: block;
+            width: 5.6rem;
+            margin: 0 auto;
+        }
+        p{
+            text-align: center;
+             font-size: 1.2rem;
+            color: #333;
+        }
+    }
+}

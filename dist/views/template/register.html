@@ -1,0 +1,57 @@
+<div>
+	<div class="regis">
+		<div class="shoptop clearfix">
+		<div class="fl shoptop-l" ng-click="goback()">
+			<img src="img/headChevronLeft.png" alt="" />
+		</div>
+			注册新用户
+		<div class="fr shoptop-r" ng-click="changeshow()">
+			<img src="img/headerIconMore.png" alt="" />
+		</div>
+	</div>
+	
+	<div class="footermain" ng-show="fl">
+	<ul class="footer-top clearfix">	
+	<li>
+		<a ui-sref="main.home" >
+			<p>
+				<i class="iconfont icon-home"></i>
+			</p>
+			首页
+		</a>
+	</li>
+	<li>
+		<a ui-sref="main.class" >
+			<p>
+				<i class="iconfont icon-fenlei"></i>
+			</p>
+
+			分类
+		</a>
+	</li>
+	<li>
+		<a ui-sref="shopcar" >
+			<p>
+				<i class="iconfont icon-gouwuche"></i>
+			</p>
+
+			购物车
+		</a>
+	</li>
+	<li>
+		<a ui-sref="main.my" >
+			<p>
+				<i class="iconfont icon-home1" ></i>
+			</p>
+
+			我的
+		</a>
+	</li>
+</ul>
+</div>
+	
+	<div ui-view="regiscon"> 
+		
+	</div>
+	</div>
+</div>

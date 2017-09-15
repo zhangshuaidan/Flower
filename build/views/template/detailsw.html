@@ -1,0 +1,133 @@
+<div>
+	<div class="detailmain">
+		<div class="detailswiper">
+			<!--详情页头部-->
+			<div class="detail-top clearfix">
+				一心一意
+				<img src="img/headChevronLeft.png" class="fl detailback"  ng-click="back()"/>
+				<img src="img/backhome.png" alt="" class="fr detaibhome" ng-click="backhome()"/>
+			</div>
+
+			<!--swiper-->
+			<div class="swiper-container swiper3">
+				<div class="swiper-wrapper"  >
+					
+		
+					<div class="swiper-slide" ng-repeat="item in arr">
+						<!--<img src="img/9010011.jpg" alt="" />-->
+						<img ng-src="img/{{item}}" alt=""  />
+					</div>
+					
+					<!--<div class="swiper-slide">
+						<img src="img/201709011121381963.jpg" alt="" />
+						<img ng-src="img/{{lb2}}" alt="" />
+					</div>
+					<div class="swiper-slide">
+						<img src="img/201709011117442888.jpg" alt="" />
+						<img ng-src="img/{{lb3}}" alt="" />
+					</div>
+					<div class="swiper-slide">
+						<img src="img/201709011117500763.jpg" alt="" />
+						<img ng-src="img/{{lb4}}" alt="" />
+					</div>-->
+				</div>
+				<div class="swiper-pagination swiper-pagination3"></div>
+			</div>
+
+		<!--底部购买按钮-->
+		<div class="footer-cart">
+			<div class="cart-md">
+				<ul class="cartlist">
+					<li>
+						<img src="img/icon_custom_service.png" alt="" />
+						<span>客服</span>
+						<i></i>
+					</li>
+					<li>
+						<img src="img/icon_phone.png" alt="" />
+						<span>电话</span>
+						<i></i>
+					</li>
+					<li>
+						<img src="img/bottonmIcon_CartDefault.png" alt="" />
+						<span>购物车</span>
+					</li>
+					<li>加入购物车</li>
+					<li>立即购买</li>
+				</ul>
+			</div>
+		</div>	
+	
+		<!--详情页具体部分-->
+		<div class="pro-main">
+				<div class="pro-price">
+					<p class="pro-name" >
+						{{content.name}}
+						<span>特价</span>
+						<img src="img/icon_collect.png" alt="" class="fr" />
+					</p>
+					<p class="pro-pri">
+						<span class="nowpri" ng-bind="content.nowprice">￥126</span>
+						<del class="oldpri" ng-bind="content.oldprice">￥156</del>
+					</p>
+				</div>
+				<div class="procon-list">
+					<ul class="pro-content">
+						<li class="clearfix">
+							<span class="fl">
+								花语
+							</span>
+							<p ng-bind="content.flowermean">
+							
+							</p>
+						</li>
+						<li>
+							<span class="fl">
+								包装
+							</span>
+							<p>
+								内层白色雾面纸，外层牛皮纸,咖啡色花结
+							</p>
+						</li>
+						
+						<li>
+							<span class="fl">
+								配送
+							</span>
+							<p>
+								全国
+							</p>
+						</li>
+						<li>
+							<span class="fl">
+								附送
+							</span>
+							<p>
+								免费附送精美贺卡，代写您的祝福。
+							</p>
+						</li>
+					</ul>
+					
+				</div>
+			
+			</div>
+		<div class="line"></div>
+		
+		<div class="openapp">
+			<p>App下单再减3元，立即打开</p>
+		</div>
+		<div class="line"></div>
+		<!--订单评论-->
+		<div advice></div>
+		<!--图片列表-->
+		<div class="img-list" ng-repeat="item in content.imgconten ">
+			<div class="maidian">
+				<img ng-src="img/{{content.maidian}}" alt="" />
+			</div>
+			<img ng-src="img/{{item}}" alt="" />
+		</div>
+		</div>
+		
+
+	</div>
+</div>

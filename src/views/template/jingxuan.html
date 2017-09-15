@@ -1,0 +1,28 @@
+<div>
+	<div class="top-con">
+		<p class="con-line"></p>
+		<p class="con-title">鲜花精选</p>
+	</div>
+	
+	
+	<div class="content-show">
+		<ul class="con-show-list clearfix" >
+			
+			<li class="fl" ui-sref="detail({id:item.id})" ng-repeat="item in data" >
+		
+				<img ng-src="img/{{item.img}}" alt="" />
+				<p>{{item.fname}}</p>
+				<p>{{item.content}}</p>
+				<p>{{item.price}}</p>
+			</li>
+
+		</ul>		
+		
+		<div class="more-flower">
+				全部鲜花
+			
+		</div>
+		
+	</div>
+</div>
+

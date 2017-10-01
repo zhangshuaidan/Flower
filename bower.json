@@ -1,12 +1,12 @@
 {
-  "name": "angu",
+  "name": "flower",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "authors": [
     "zhangshuaidan <903326564@qq.com>"
   ],
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/zhangshuaidan/Flower",
   "ignore": [
     "**/.*",
     "node_modules",
